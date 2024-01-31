@@ -1,0 +1,6 @@
+typing_extensions
+torch
+torchaudio
+torchvision
+yolov5
+Pillow
