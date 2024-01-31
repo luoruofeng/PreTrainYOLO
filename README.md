@@ -7,8 +7,9 @@
 思路：
 1. 将voc转换为coco格式
 2. 使用yolov5s模型给定图片的推理中人的信息存保存为coco标注，如果该图片有火烟雾就将两个coco融合为同一个coco标注文件，即包含吧烟雾，火，人的coco标注文件。
-3. 如果图片宽或高超过640px则裁剪到640px大小内。
-4. yolov5训练。
+3. 将coco转换为yolo数据集格式的txt标注数据。
+4. 如果图片宽或高超过640px则裁剪到640px大小内。
+5. yolov5训练。
 
 ## 数据来源
 1. [火焰和烟雾的数据集](https://aistudio.baidu.com/datasetdetail/107770)
